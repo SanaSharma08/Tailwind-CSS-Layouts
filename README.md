@@ -1,2 +1,17 @@
 # Tailwind-CSS-Layouts
 Layouts Made with Tailwind CSS
+
+# Setup
+1. npm init -y
+2. npm i tailwindcss
+3. npx tailwindcss -i style.css -o output.css --watch
+-i style.css: This is your "input" file where you wrote the @import.
+-o output.css: This creates a new "output" file that contains all the actual CSS code.
+--watch: This keeps the terminal running and updates the output file every time you save your HTML or CSS.
+
+Now that you are generating an output.css file, you need to link that file in your <head> instead of the original style.css.
+
+<link rel="stylesheet" href="output.css"> (in index.html)
+
+@import "tailwindcss"; in style.css
+
